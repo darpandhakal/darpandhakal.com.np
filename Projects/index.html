@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Landing Page Design</title>
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="#">Darpan</a>
+
+      <nav class="links">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="btn btn--ghost" href="../../index.html">← Back</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container heroGrid">
+        <div class="heroLeft">
+          <p class="pill">Modern • Responsive • Clean UI</p>
+          <h1>Landing pages that look premium and convert.</h1>
+          <p class="muted">
+            A responsive landing page design built with pure HTML & CSS.
+            Smooth layout, modern sections, and mobile-friendly.
+          </p>
+
+          <div class="cta">
+            <a class="btn" href="#pricing">Get Started</a>
+            <a class="btn btn--soft" href="#features">See Features</a>
+          </div>
+
+          <div class="miniStats">
+            <div class="stat">
+              <span class="num">Fast</span>
+              <span class="label">Lightweight CSS</span>
+            </div>
+            <div class="stat">
+              <span class="num">100%</span>
+              <span class="label">Responsive</span>
+            </div>
+            <div class="stat">
+              <span class="num">Clean</span>
+              <span class="label">Modern UI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="heroRight">
+          <div class="mock">
+            <div class="mockTop">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="mockBody">
+              <div class="card big"></div>
+              <div class="row">
+                <div class="card"></div>
+                <div class="card"></div>
+              </div>
+              <div class="card long"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <h2>Features</h2>
+        <p class="muted">Designed to look great on any device.</p>
+
+        <div class="grid3">
+          <article class="box">
+            <h3>Responsive Layout</h3>
+            <p class="muted">Looks perfect on mobile, tablet, and desktop.</p>
+          </article>
+          <article class="box">
+            <h3>Modern Design</h3>
+            <p class="muted">Clean spacing, sharp typography, smooth UI.</p>
+          </article>
+          <article class="box">
+            <h3>Easy to Customize</h3>
+            <p class="muted">Change colors, text, and sections quickly.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section alt">
+      <div class="container">
+        <h2>Pricing</h2>
+        <p class="muted">Example pricing cards for landing pages.</p>
+
+        <div class="grid3">
+          <article class="price">
+            <h3>Starter</h3>
+            <p class="muted">For practice projects</p>
+            <p class="money">$0</p>
+            <ul>
+              <li>Responsive sections</li>
+              <li>Hero + CTA</li>
+              <li>Clean layout</li>
+            </ul>
+            <a class="btn btn--soft" href="#contact">Choose</a>
+          </article>
+
+          <article class="price featured">
+            <h3>Pro</h3>
+            <p class="muted">For portfolios</p>
+            <p class="money">$19</p>
+            <ul>
+              <li>Premium design</li>
+              <li>Extra sections</li>
+              <li>Best UI layout</li>
+            </ul>
+            <a class="btn" href="#contact">Choose</a>
+          </article>
+
+          <article class="price">
+            <h3>Business</h3>
+            <p class="muted">For real clients</p>
+            <p class="money">$49</p>
+            <ul>
+              <li>High conversion UI</li>
+              <li>Custom components</li>
+              <li>Mobile-first</li>
+            </ul>
+            <a class="btn btn--soft" href="#contact">Choose</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section">
+      <div class="container">
+        <h2>Reviews</h2>
+        <p class="muted">Example testimonial section.</p>
+
+        <div class="grid3">
+          <article class="quote">
+            <p>“Clean design and smooth layout. Looks professional.”</p>
+            <span class="muted">— Reviewer A</span>
+          </article>
+          <article class="quote">
+            <p>“Perfect on mobile. The spacing is really nice.”</p>
+            <span class="muted">— Reviewer B</span>
+          </article>
+          <article class="quote">
+            <p>“Great landing page structure for a portfolio project.”</p>
+            <span class="muted">— Reviewer C</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container contact">
+        <div>
+          <h2>Contact</h2>
+          <p class="muted">This is a demo contact section for your landing page project.</p>
+        </div>
+        <a class="btn" href="../../index.html#contact">Go to Main Website Contact</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container foot">
+      <p class="muted">© <span id="y"></span> Landing Page Design • Darpan Dhakal</p>
+      <a class="muted" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
