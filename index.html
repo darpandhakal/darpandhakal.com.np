@@ -1,373 +1,188 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#0b1020" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Landing Page Design</title>
 
-  <title>Darpan Dhakal - Student & Future Professional</title>
-  <meta name="description" content="Personal portfolio of Darpan Dhakal, showcasing skills, projects, and achievements for university applications, visas, and professional opportunities." />
-  <meta name="keywords" content="Darpan Dhakal, portfolio, web developer, student, Nepal, skills, projects" />
-  <meta name="author" content="Darpan Dhakal" />
-  <meta name="robots" content="index, follow" />
-
-  <link rel="icon" href="image/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="css/style.css" />
-  <script defer src="js/script.js"></script>
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <div class="scroll-progress" aria-hidden="true">
-    <div class="scroll-progress__bar" id="scrollBar"></div>
-  </div>
-
   <header class="header">
-    <nav class="nav container" aria-label="Main navigation">
-      <a class="brand" href="#home" aria-label="Go to home">
-        <span class="brand__mark" aria-hidden="true">DD</span>
-        <span class="brand__text">Darpan Dhakal</span>
-      </a>
+    <div class="container nav">
+      <a class="logo" href="#">Darpan</a>
 
-      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
-        <span class="nav__toggleLines" aria-hidden="true"></span>
-      </button>
+      <nav class="links">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-      <div class="nav__menu" id="navMenu">
-        <a class="nav__link" href="#home">Home</a>
-        <a class="nav__link" href="#about">About</a>
-        <a class="nav__link" href="#skills">Skills</a>
-        <a class="nav__link" href="#portfolio">Portfolio</a>
-        <a class="nav__link" href="#certificates">Certificates</a>
-        <a class="nav__link" href="#contact">Contact</a>
-
-        <div class="nav__actions">
-          <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme">
-            <span class="icon" aria-hidden="true" id="themeIcon">☾</span>
-          </button>
-
-          <a class="btn btn--soft" href="assets/Darpan_Dhakal_CV_Final.pdf" target="_blank" rel="noopener">
-            View / Download CV
-          </a>
-        </div>
-      </div>
-    </nav>
+      <a class="btn btn--ghost" href="../../index.html">← Back</a>
+    </div>
   </header>
 
-  <main id="main">
-    <!-- HERO -->
-    <section id="home" class="hero">
-      <div class="container hero__grid">
-        <div class="hero__left">
-          <p class="badge"><span class="dot" aria-hidden="true"></span> Student • Future Professional</p>
-
-          <h1 class="hero__title">
-            <span class="muted">Hi, I’m</span> <span class="grad">Darpan Dhakal</span><br />
-            <span class="hero__type"
-                  id="typedText"
-                  data-phrases='[
-                    "Building clean, responsive websites with modern UI.",
-                    "Turning ideas into functional and elegant digital experiences.",
-                    "Web Development • UI/UX • Learning every day."
-                  ]'></span>
-            <span class="typeCursor" aria-hidden="true"></span>
-          </h1>
-
-          <p class="hero__desc">
-            A Computer Science student from Hetauda, Nepal — focused on web development, UI/UX, and practical projects.
+  <main>
+    <section class="hero">
+      <div class="container heroGrid">
+        <div class="heroLeft">
+          <p class="pill">Modern • Responsive • Clean UI</p>
+          <h1>Landing pages that look premium and convert.</h1>
+          <p class="muted">
+            A responsive landing page design built with pure HTML & CSS.
+            Smooth layout, modern sections, and mobile-friendly.
           </p>
 
-          <div class="hero__cta">
-            <a class="btn" href="#contact">Contact Me</a>
-            <a class="btn btn--ghost" href="#portfolio">View Projects</a>
+          <div class="cta">
+            <a class="btn" href="#pricing">Get Started</a>
+            <a class="btn btn--soft" href="#features">See Features</a>
           </div>
 
-          <div class="hero__meta">
-            <div class="metaCard"><span class="metaCard__k">Focus</span><span class="metaCard__v">Web + UI/UX</span></div>
-            <div class="metaCard"><span class="metaCard__k">Learning</span><span class="metaCard__v">C, Python, JS</span></div>
-            <div class="metaCard"><span class="metaCard__k">Location</span><span class="metaCard__v">Hetauda, Nepal</span></div>
-          </div>
-        </div>
-
-        <div class="hero__right">
-          <div class="profileCard">
-            <div class="profileCard__bg" aria-hidden="true"></div>
-
-            <img class="profileCard__img" src="image/profile.jpg" alt="Darpan Dhakal" loading="lazy" />
-
-            <div class="profileCard__info">
-              <div>
-                <p class="profileCard__name">Darpan Dhakal</p>
-                <p class="profileCard__role">Computer Science Student</p>
-              </div>
-
-              <div class="social">
-                <a class="icon-btn" href="https://www.linkedin.com/in/darpan-dhakal-642839284/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
-                <a class="icon-btn" href="https://github.com/darpandhakal" target="_blank" rel="noopener" aria-label="GitHub">⌂</a>
-                <a class="icon-btn" href="https://www.instagram.com/dhakal__darpan/" target="_blank" rel="noopener" aria-label="Instagram">📸</a>
-                <a class="icon-btn" href="https://www.facebook.com/darpan.dhakal.391" target="_blank" rel="noopener" aria-label="Facebook">f</a>
-                <a class="icon-btn" href="mailto:darpandhakal30@gmail.com" aria-label="Email">✉</a>
-              </div>
+          <div class="miniStats">
+            <div class="stat">
+              <span class="num">Fast</span>
+              <span class="label">Lightweight CSS</span>
             </div>
-
-            <div class="profileCard__chips" aria-label="Highlights">
-              <span class="chip">HTML</span>
-              <span class="chip">CSS</span>
-              <span class="chip">JavaScript</span>
-              <span class="chip">UI/UX</span>
+            <div class="stat">
+              <span class="num">100%</span>
+              <span class="label">Responsive</span>
+            </div>
+            <div class="stat">
+              <span class="num">Clean</span>
+              <span class="label">Modern UI</span>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="hero__glow" aria-hidden="true"></div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="container">
-        <div class="sectionHead">
-          <h2 class="sectionTitle">About Me</h2>
-          <p class="sectionSub">Continuous learning, teaching, and growing through technology.</p>
-        </div>
-
-        <div class="grid2">
-          <div class="card">
-            <h3 class="cardTitle">Bio</h3>
-            <p class="muted">
-              Hello! I’m Darpan Dhakal, a passionate Computer Science student who loves programming, design,
-              and turning ideas into smart solutions.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3 class="cardTitle">Education</h3>
-            <ul class="timeline">
-              <li class="timeline__item">
-                <div class="timeline__dot" aria-hidden="true"></div>
-                <div>
-                  <p class="timeline__title">Higher Secondary (+2) in Computer Science</p>
-                  <p class="timeline__meta">Hetauda School of Management Secondary School (2025)</p>
-                </div>
-              </li>
-              <li class="timeline__item">
-                <div class="timeline__dot" aria-hidden="true"></div>
-                <div>
-                  <p class="timeline__title">Secondary Education (SEE)</p>
-                  <p class="timeline__meta">Shree Janapriya Secondary School, Nepal (2023)</p>
-                </div>
-              </li>
-            </ul>
+        <div class="heroRight">
+          <div class="mock">
+            <div class="mockTop">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="mockBody">
+              <div class="card big"></div>
+              <div class="row">
+                <div class="card"></div>
+                <div class="card"></div>
+              </div>
+              <div class="card long"></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section">
+    <section id="features" class="section">
       <div class="container">
-        <div class="sectionHead">
-          <h2 class="sectionTitle">Skills</h2>
-          <p class="sectionSub">Technical + soft skills for building and teamwork.</p>
-        </div>
+        <h2>Features</h2>
+        <p class="muted">Designed to look great on any device.</p>
 
-        <div class="grid2">
-          <div class="card">
-            <h3 class="cardTitle">Technical Skills</h3>
-            <ul class="list">
-              <li>Web Development: HTML5, CSS3, JavaScript</li>
-              <li>Programming Languages: C, Java, Python</li>
-              <li>Databases: SQL</li>
-              <li>Version Control: Git, GitHub</li>
-              <li>Design & UI/UX: Wireframing, Prototyping, User-Centered Design</li>
-            </ul>
-
-            <div class="skill">
-              <div class="skill__top"><span>HTML / CSS</span><span class="muted">Strong</span></div>
-              <div class="bar"><span style="width: 85%"></span></div>
-            </div>
-            <div class="skill">
-              <div class="skill__top"><span>JavaScript</span><span class="muted">Growing</span></div>
-              <div class="bar"><span style="width: 70%"></span></div>
-            </div>
-            <div class="skill">
-              <div class="skill__top"><span>C / Python</span><span class="muted">Learning</span></div>
-              <div class="bar"><span style="width: 60%"></span></div>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3 class="cardTitle">Soft Skills</h3>
-            <ul class="checklist">
-              <li>Problem-Solving</li>
-              <li>Team Collaboration</li>
-              <li>Time Management</li>
-              <li>Adaptability</li>
-              <li>Creativity</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PORTFOLIO -->
-    <section id="portfolio" class="section">
-      <div class="container">
-        <div class="sectionHead sectionHead--row">
-          <div>
-            <h2 class="sectionTitle">Portfolio / Projects</h2>
-            <p class="sectionSub">Projects that show my growth and interest.</p>
-          </div>
-
-          <div class="filters" role="group" aria-label="Project filters">
-            <button class="pill is-active" data-filter="all" type="button">All</button>
-            <button class="pill" data-filter="web" type="button">Web</button>
-            <button class="pill" data-filter="js" type="button">JavaScript</button>
-            <button class="pill" data-filter="uiux" type="button">UI/UX</button>
-          </div>
-        </div>
-
-        <div class="cards3" id="projectGrid">
-          <!-- ✅ Mini Calculator (local project) -->
-          <article class="card project" data-tags="js web">
-            <img src="image/project1.jpg" alt="Mini Calculator" loading="lazy" />
-            <div class="project__body">
-              <h3 class="cardTitle">Mini Calculator</h3>
-              <p class="muted">A simple JavaScript calculator to practice DOM manipulation and events.</p>
-              <div class="project__actions">
-                <a class="btn btn--soft" href="Projects/mini-calculator/index.html" target="_blank" rel="noopener">Live</a>
-                <a class="btn btn--ghost" href="Projects/mini-calculator/script.js" target="_blank" rel="noopener">Code</a>
-              </div>
-            </div>
+        <div class="grid3">
+          <article class="box">
+            <h3>Responsive Layout</h3>
+            <p class="muted">Looks perfect on mobile, tablet, and desktop.</p>
           </article>
-
-          <!-- ✅ Landing Page (local project) -->
-          <article class="card project" data-tags="web">
-            <img src="image/project2.jpg" alt="Landing Page Design" loading="lazy" />
-            <div class="project__body">
-              <h3 class="cardTitle">Landing Page Design</h3>
-              <p class="muted">A responsive landing page design created with HTML and CSS.</p>
-              <div class="project__actions">
-                <a class="btn btn--soft" href="Projects/landing-page/index.html" target="_blank" rel="noopener">Live</a>
-                <a class="btn btn--ghost" href="Projects/landing-page/style.css" target="_blank" rel="noopener">Code</a>
-              </div>
-            </div>
+          <article class="box">
+            <h3>Modern Design</h3>
+            <p class="muted">Clean spacing, sharp typography, smooth UI.</p>
           </article>
-
-          <!-- ✅ UI/UX (Figma proto) -->
-          <article class="card project" data-tags="uiux">
-            <img src="image/project3.jpg" alt="Travello UI/UX Prototype" loading="lazy" />
-            <div class="project__body">
-              <h3 class="cardTitle">UI/UX Concept – Travello</h3>
-              <p class="muted">An interactive Figma prototype demonstrating user flows, layout hierarchy, and user-centered design.</p>
-              <div class="project__actions">
-                <a class="btn btn--soft"
-                   href="https://www.figma.com/proto/DCjKEq8u8mBIcsKPQBl8wV/Travello-Final-Design?node-id=412-626&t=JIoKkFN914TOtTTc-1&scaling=contain&content-scaling=fixed&page-id=302%3A950&starting-point-node-id=412%3A626"
-                   target="_blank" rel="noopener">View (Figma)</a>
-              </div>
-            </div>
+          <article class="box">
+            <h3>Easy to Customize</h3>
+            <p class="muted">Change colors, text, and sections quickly.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- CERTIFICATES -->
-    <section id="certificates" class="section">
+    <section id="pricing" class="section alt">
       <div class="container">
-        <div class="sectionHead">
-          <h2 class="sectionTitle">Certificates & Achievements</h2>
-          <p class="sectionSub">Click any certificate to preview.</p>
-        </div>
+        <h2>Pricing</h2>
+        <p class="muted">Example pricing cards for landing pages.</p>
 
-        <div class="cards3">
-          <button class="card cert" type="button" data-title="Python Essentials 1 – Cisco Networking Academy" data-img="Certificates/python-cisco.jpg">
-            <h3 class="cardTitle">Python Essentials 1</h3>
-            <p class="muted">Cisco Networking Academy</p>
-          </button>
+        <div class="grid3">
+          <article class="price">
+            <h3>Starter</h3>
+            <p class="muted">For practice projects</p>
+            <p class="money">$0</p>
+            <ul>
+              <li>Responsive sections</li>
+              <li>Hero + CTA</li>
+              <li>Clean layout</li>
+            </ul>
+            <a class="btn btn--soft" href="#contact">Choose</a>
+          </article>
 
-          <button class="card cert" type="button" data-title="Codingal Coding Star – Top 10% Rank in Class" data-img="Certificates/codingal.jpg">
-            <h3 class="cardTitle">Codingal Coding Star</h3>
-            <p class="muted">Top 10% Rank in Class</p>
-          </button>
+          <article class="price featured">
+            <h3>Pro</h3>
+            <p class="muted">For portfolios</p>
+            <p class="money">$19</p>
+            <ul>
+              <li>Premium design</li>
+              <li>Extra sections</li>
+              <li>Best UI layout</li>
+            </ul>
+            <a class="btn" href="#contact">Choose</a>
+          </article>
 
-          <button class="card cert" type="button" data-title="UI/UX + Figma Workshop – Proxel (HSM)" data-img="Certificates/proxelhsm.jpg">
-            <h3 class="cardTitle">UI/UX + Figma Workshop</h3>
-            <p class="muted">Proxel • HSM</p>
-          </button>
-        </div>
-
-        <ul class="cert-list">
-          <li>Advanced Python Programming Course – Codecademy</li>
-          <li>Advanced HTML, Excel, CSS & JavaScript Course – STP Computer Education</li>
-          <li>UI/UX Online Course – Great Learning Certificate of Completion</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="sectionHead">
-          <h2 class="sectionTitle">Contact</h2>
-          <p class="sectionSub">Send me a message anytime.</p>
-        </div>
-
-        <div class="grid2">
-          <div class="card">
-            <h3 class="cardTitle">Message me</h3>
-            <form class="form" id="contact-form" action="https://formspree.io/f/xaqnggek" method="POST">
-              <label><span>Name</span><input type="text" name="name" placeholder="Your full name" required /></label>
-              <label><span>Email</span><input type="email" name="email" placeholder="Your email address" required /></label>
-              <label><span>Message</span><textarea name="message" rows="5" placeholder="Type your message here..." required></textarea></label>
-              <button type="submit" class="btn">Send Message</button>
-            </form>
-          </div>
-
-          <div class="card">
-            <h3 class="cardTitle">Social</h3>
-            <div class="linkList">
-              <a class="linkRow" href="https://www.linkedin.com/in/darpan-dhakal-642839284/" target="_blank" rel="noopener">
-                <span>LinkedIn</span><span class="muted">Open →</span>
-              </a>
-              <a class="linkRow" href="https://github.com/darpandhakal" target="_blank" rel="noopener">
-                <span>GitHub</span><span class="muted">Open →</span>
-              </a>
-              <a class="linkRow" href="https://www.instagram.com/dhakal__darpan/" target="_blank" rel="noopener">
-                <span>Instagram</span><span class="muted">Open →</span>
-              </a>
-              <a class="linkRow" href="https://www.facebook.com/darpan.dhakal.391" target="_blank" rel="noopener">
-                <span>Facebook</span><span class="muted">Open →</span>
-              </a>
-              <a class="linkRow" href="mailto:darpandhakal30@gmail.com">
-                <span>Email</span><span class="muted">Send →</span>
-              </a>
-              <a class="linkRow" href="assets/Darpan_Dhakal_CV_Final.pdf" target="_blank" rel="noopener">
-                <span>My CV (PDF)</span><span class="muted">Open →</span>
-              </a>
-            </div>
-          </div>
+          <article class="price">
+            <h3>Business</h3>
+            <p class="muted">For real clients</p>
+            <p class="money">$49</p>
+            <ul>
+              <li>High conversion UI</li>
+              <li>Custom components</li>
+              <li>Mobile-first</li>
+            </ul>
+            <a class="btn btn--soft" href="#contact">Choose</a>
+          </article>
         </div>
       </div>
     </section>
 
-    <footer class="footer">
-      <div class="container footer__inner">
-        <p class="muted">© <span id="year"></span> Darpan Dhakal. All rights reserved. | darpandhakal.com.np</p>
-        <a class="muted toTop" href="#home">Back to top ↑</a>
+    <section id="testimonials" class="section">
+      <div class="container">
+        <h2>Reviews</h2>
+        <p class="muted">Example testimonial section.</p>
+
+        <div class="grid3">
+          <article class="quote">
+            <p>“Clean design and smooth layout. Looks professional.”</p>
+            <span class="muted">— Reviewer A</span>
+          </article>
+          <article class="quote">
+            <p>“Perfect on mobile. The spacing is really nice.”</p>
+            <span class="muted">— Reviewer B</span>
+          </article>
+          <article class="quote">
+            <p>“Great landing page structure for a portfolio project.”</p>
+            <span class="muted">— Reviewer C</span>
+          </article>
+        </div>
       </div>
-    </footer>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container contact">
+        <div>
+          <h2>Contact</h2>
+          <p class="muted">This is a demo contact section for your landing page project.</p>
+        </div>
+        <a class="btn" href="../../index.html#contact">Go to Main Website Contact</a>
+      </div>
+    </section>
   </main>
 
-  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-label="Certificate preview">
-    <div class="modal__backdrop" data-close="true"></div>
-    <div class="modal__panel" role="document">
-      <div class="modal__head">
-        <p class="modal__title" id="modalTitle">Certificate</p>
-        <button class="icon-btn" type="button" id="modalClose" aria-label="Close preview">✕</button>
-      </div>
-      <img id="modalImg" alt="Certificate preview" loading="lazy" />
+  <footer class="footer">
+    <div class="container foot">
+      <p class="muted">© <span id="y"></span> Landing Page Design • Darpan Dhakal</p>
+      <a class="muted" href="#top">Back to top ↑</a>
     </div>
-  </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
